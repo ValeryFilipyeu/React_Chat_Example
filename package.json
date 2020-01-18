@@ -1,0 +1,19 @@
+{
+  "name": "chat",
+  "version": "0.5.4",
+  "private": true,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "scripts": {
+    "start": "node setup/populate.js --quick-test && react-scripts start",
+    "build": "node setup/populate.js --quick-test && react-scripts build",
+    "test": "node setup/populate.js --quick-test && react-scripts test",
+    "setup": "node setup/populate.js"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "typescript": "3.6.3"
+  }
+}
