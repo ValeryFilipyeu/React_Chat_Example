@@ -7,14 +7,12 @@ import { AuthenticationStateReducer } from "features/authentication/authenticati
 import { MessageStateReducer } from "features/messages/messageModel";
 import { conversationStateReducer } from "features/conversations/conversationModel";
 import { JoinedConversationsStateReducer } from "features/joinedConversations/joinedConversationModel";
-import { NetworkStatusReducer } from "features/currentUser/networkStatusModel";
 
 /**
  * Combine all of the reducers in this application
  */
 const rootReducer = combineReducers({
   layout: LayoutStateReducer,
-  networkStatus: NetworkStatusReducer,
   users: UsersReducer,
   conversations: conversationStateReducer,
   joinedConversations: JoinedConversationsStateReducer,

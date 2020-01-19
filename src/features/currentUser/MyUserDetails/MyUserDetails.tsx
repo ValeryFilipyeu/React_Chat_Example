@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { UserInitialsAvatar } from "components/UserInitialsAvatar";
 import { getLoggedInUserId } from "features/authentication/authenticationModel";
 import { getUsersById } from "features/users/userModel";
-import { NetworkStatus } from "../NetworkStatus";
 import {
   Wrapper,
   Avatar,
@@ -25,7 +24,6 @@ const MyUserDetails = () => {
   return (
     <Wrapper>
       <Avatar>
-        <NetworkStatus />
         <UserInitialsAvatar size={56} name={user.name} uuid={user.id} />
       </Avatar>
       <About>
