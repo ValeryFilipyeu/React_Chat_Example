@@ -5,7 +5,7 @@ import posed from "react-pose";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: #A9A9A9;
+  background-color: black;
   width: 100%;
 `;
 

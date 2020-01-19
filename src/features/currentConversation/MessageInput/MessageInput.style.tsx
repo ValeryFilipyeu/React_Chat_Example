@@ -27,7 +27,7 @@ export const TextArea = styled.textarea`
   max-height: 150px;
   padding: 0;
   margin-left: 15px;
-  background-color: #A9A9A9;
+  background-color: black;
 
   &::placeholder {
     color: #979797;
