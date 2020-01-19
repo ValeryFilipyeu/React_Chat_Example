@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   background-color: black;
-  width: 100%;
+  width: 50%;
 `;
 
 export const AnimatedWrapper = posed(Wrapper)({

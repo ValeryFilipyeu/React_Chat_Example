@@ -15,7 +15,7 @@ jobs:
           echo '{
             "publishKey": "${PROD_PUBLISH_KEY}",
             "subscribeKey": "${PROD_SUBSCRIBE_KEY}"
-          }' >> ./src/config/pubnub-keys.json
+          }' >> ./src/config/keys.json
       install:
         - npm install
       script:

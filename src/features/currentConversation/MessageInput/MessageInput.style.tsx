@@ -24,7 +24,6 @@ export const TextArea = styled.textarea`
   border: none;
   resize: none;
   overflow: auto;
-  max-height: 150px;
   padding: 0;
   margin-left: 15px;
   background-color: black;
@@ -36,7 +35,7 @@ export const TextArea = styled.textarea`
   &:focus {
     outline: none;
   }
-  font-size: 15px;
+  font-size: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #5a5a5a;

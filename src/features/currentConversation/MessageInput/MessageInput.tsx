@@ -72,6 +72,8 @@ const MessageInput = () => {
         <TextArea
           ref={textareaRef}
           rows={1}
+          cols={25}
+          maxLength={250}
           value={message}
           onChange={changed}
           onKeyPress={handleKeyPress}
