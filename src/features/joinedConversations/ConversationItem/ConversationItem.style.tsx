@@ -29,13 +29,6 @@ export const Name = styled.div`
   white-space: nowrap;
 `;
 
-export const MessageCount = styled.span`
-  margin: 10px 10px;
-  :hover {
-    display: none;
-  }
-`;
-
 export const ConversationIcon = styled.div<{ selected: boolean }>`
   width: 36px;
   height: 36px;

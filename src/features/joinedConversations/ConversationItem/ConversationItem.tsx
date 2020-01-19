@@ -3,8 +3,7 @@ import {
   Wrapper,
   Body,
   ConversationIcon,
-  Name,
-  MessageCount
+  Name
 } from "./ConversationItem.style";
 
 interface ConversationItemProps {
@@ -32,7 +31,6 @@ const ConversationItem = ({
         <ConversationIcon selected={selected}>#</ConversationIcon>
         <Name>{name}</Name>
       </Body>
-      <MessageCount>{unreadMessageCount}</MessageCount>
     </Wrapper>
   );
 };

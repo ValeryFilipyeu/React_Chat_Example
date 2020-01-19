@@ -8,9 +8,6 @@ import { MessageStateReducer } from "features/messages/messageModel";
 import { conversationStateReducer } from "features/conversations/conversationModel";
 import { JoinedConversationsStateReducer } from "features/joinedConversations/joinedConversationModel";
 
-/**
- * Combine all of the reducers in this application
- */
 const rootReducer = combineReducers({
   layout: LayoutStateReducer,
   users: UsersReducer,
@@ -23,7 +20,4 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 
-/**
- * RootState describes the shape of the global Redux store in this application
- */
 export type RootState = Readonly<ReturnType<typeof rootReducer>>;

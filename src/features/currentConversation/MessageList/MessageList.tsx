@@ -8,28 +8,17 @@ import { getMessagesById } from "features/messages/messageModel";
 import { Wrapper } from "./MessageList.style";
 import WelcomeMessage from "./WelcomeMessage";
 
-/**
- * Create a selector that that returns the list of messages in the currentConversation joined
- * to the user that sent that message
- *
- * TODO:
- * This implementation will cause the dependant component to re-render if any user data has changed
- * if the current conversation has changed or if any message has changed or if any user has changed.
- * This needs to be reduced in scope
- *
- * TODO: This needs to sort by time token; object keys are not guarenteed to retain order in js.
- */
 export const getCurrentConversationMessages = createSelector(
   [getMessagesById, getCurrentConversationId, getUsersById],
   (messages, conversationId, users): MessageFragment[] => {
     if (!messages) {
-      throw new Error(`rats!`);
+      throw new Error(`error!`);
     }
     if (!conversationId) {
-      throw new Error(`rats!`);
+      throw new Error(`error!`);
     }
     if (!users) {
-      throw new Error(`rats!`);
+      throw new Error(`error!`);
     }
 
     return messages[conversationId]

@@ -30,7 +30,6 @@ interface MessageProps {
 }
 
 const Message = ({ message, avatar }: MessageProps) => {
-  // show unknown sender when sender is missing
   let sender = message.sender || { id: "unknown", name: "Unknown" };
 
   return (
