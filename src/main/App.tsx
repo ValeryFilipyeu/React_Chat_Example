@@ -7,7 +7,7 @@ import { createPubNubListener } from "pubnub-redux";
 import { PubNubProvider } from "pubnub-react";
 import { Provider } from "react-redux";
 import { createAppStore } from "main/store";
-import { resize } from "features/layout/actions";
+import { resize } from "components/layout/actions";
 import keyConfiguration from "config/keys.json";
 
 const pubnubConfig = Object.assign(

@@ -1,15 +1,15 @@
 import {
   focusOnConversationAction,
   updateConversationMessageInputValueAction
-} from "features/currentConversation/currentConversationModel";
+} from "components/currentConversation/currentConversationModel";
 import {
   setLayoutAction,
   setBreakpointAction
-} from "features/layout/layoutModel";
+} from "components/layout/layoutModel";
 import {
   logingInAction,
   loginSucceededAction
-} from "features/authentication/authenticationModel";
+} from "components/authentication/authenticationModel";
 
 export type AppActions =
   | focusOnConversationAction

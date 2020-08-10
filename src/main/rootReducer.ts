@@ -1,12 +1,12 @@
 import { combineReducers } from "redux";
 
-import { currentConversationStateReducer } from "features/currentConversation/currentConversationModel";
-import { LayoutStateReducer } from "features/layout/layoutModel";
-import { UsersReducer } from "features/users/userModel";
-import { AuthenticationStateReducer } from "features/authentication/authenticationModel";
-import { MessageStateReducer } from "features/messages/messageModel";
-import { conversationStateReducer } from "features/conversations/conversationModel";
-import { JoinedConversationsStateReducer } from "features/joinedConversations/joinedConversationModel";
+import { currentConversationStateReducer } from "components/currentConversation/currentConversationModel";
+import { LayoutStateReducer } from "components/layout/layoutModel";
+import { UsersReducer } from "components/users/userModel";
+import { AuthenticationStateReducer } from "components/authentication/authenticationModel";
+import { MessageStateReducer } from "components/messages/messageModel";
+import { conversationStateReducer } from "components/conversations/conversationModel";
+import { JoinedConversationsStateReducer } from "components/joinedConversations/joinedConversationModel";
 
 const rootReducer = combineReducers({
   layout: LayoutStateReducer,
