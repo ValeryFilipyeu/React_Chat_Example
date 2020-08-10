@@ -9,7 +9,7 @@ import {
 } from "./Login.style";
 import { login } from "../loginCommand";
 import { isLoggingIn } from "../authenticationModel";
-import { isUserLoggedIn } from "features/authentication/authenticationModel";
+import { isUserLoggedIn } from "components/authentication/authenticationModel";
 import { useSelector } from "react-redux";
 import KnownIds from "./knownUserIds.json";
 

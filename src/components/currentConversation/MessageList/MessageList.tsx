@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
 import { Message, MessageFragment } from "../Message";
 import { getCurrentConversationId } from "../currentConversationModel";
-import { getUsersById } from "features/users/userModel";
-import { getMessagesById } from "features/messages/messageModel";
+import { getUsersById } from "components/users/userModel";
+import { getMessagesById } from "components/messages/messageModel";
 import { Wrapper } from "./MessageList.style";
 import WelcomeMessage from "./WelcomeMessage";
 

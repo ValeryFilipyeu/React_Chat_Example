@@ -1,6 +1,6 @@
 import {shallow} from 'enzyme';
 import * as React from 'react';
-import { CurrentConversation } from "features/currentConversation/CurrentConversation/CurrentConversation";
+import { CurrentConversation } from "components/currentConversation/CurrentConversation/CurrentConversation";
 
 const setup = () => {
     return shallow(<CurrentConversation />)

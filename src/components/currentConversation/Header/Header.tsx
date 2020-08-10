@@ -1,11 +1,11 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { createSelector } from "reselect";
-import { setLayoutLeft } from "features/layout/actions";
+import { setLayoutLeft } from "components/layout/actions";
 import {
   ConversationsIndexedById,
   getConversationsById
-} from "features/conversations/conversationModel";
+} from "components/conversations/conversationModel";
 import { getCurrentConversationId } from "../currentConversationModel";
 import {
   Wrapper,
@@ -16,7 +16,7 @@ import {
   Border,
   BackIconWrapper
 } from "./Header.style";
-import { Back as BackIcon } from "components/icons/Back";
+import { Back as BackIcon } from "components/UI/icons/Back";
 
 export interface ConversationDescriptionFragment {
   id: string;

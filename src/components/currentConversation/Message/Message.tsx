@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { UserInitialsAvatar } from "components/UserInitialsAvatar";
+import { UserInitialsAvatar } from "components/UI/UserInitialsAvatar";
 import convertTimestampToTime from "utilities/convertTimestampToTime";
 import {
   Wrapper,

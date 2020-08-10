@@ -1,6 +1,6 @@
 import {shallow} from 'enzyme';
 import * as React from 'react';
-import { Menu } from "features/chat/Menu/Menu";
+import { Menu } from "components/chat/Menu/Menu";
 
 const setup = () => {
     return shallow(<Menu />)

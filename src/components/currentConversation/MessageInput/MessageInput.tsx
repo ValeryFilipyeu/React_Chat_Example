@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Wrapper, Container, TextArea } from "./MessageInput.style";
-import { sendMessageAction } from "features/messages/sendMessageCommand";
+import { sendMessageAction } from "components/messages/sendMessageCommand";
 import {
   getCurrentConversationId,
   getConversationMessageInputValue
 } from "../currentConversationModel";
-import { updateConversationMessageInputValueAction } from "features/currentConversation/currentConversationModel";
+import { updateConversationMessageInputValueAction } from "components/currentConversation/currentConversationModel";
 
 const emptyMessage = "";
 

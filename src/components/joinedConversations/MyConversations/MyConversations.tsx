@@ -1,16 +1,16 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { createSelector } from "reselect";
-import { getCurrentConversationId } from "features/currentConversation/currentConversationModel";
-import { setLayoutDefault } from "features/layout/actions";
+import { getCurrentConversationId } from "components/currentConversation/currentConversationModel";
+import { setLayoutDefault } from "components/layout/actions";
 import { getConversationsByUserId } from "../joinedConversationModel";
 import { MembershipHash } from "../joinedConversationModel";
 import {
   ConversationsIndexedById,
   getConversationsById
-} from "features/conversations/conversationModel";
-import { focusOnConversation } from "features/currentConversation/currentConversationModel";
-import { getLoggedInUserId } from "features/authentication/authenticationModel";
+} from "components/conversations/conversationModel";
+import { focusOnConversation } from "components/currentConversation/currentConversationModel";
+import { getLoggedInUserId } from "components/authentication/authenticationModel";
 import { ConversationItem } from "../ConversationItem";
 import {
   Wrapper,

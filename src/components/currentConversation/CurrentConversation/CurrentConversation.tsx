@@ -4,7 +4,7 @@ import { Header } from "../Header";
 import { MessageList } from "../MessageList";
 import { MessageInput } from "../MessageInput";
 import { useSelector } from "react-redux";
-import { getPanelStates } from "features/layout/selectors";
+import { getPanelStates } from "components/layout/selectors";
 
 const CurrentConversation = () => {
   const panels = useSelector(getPanelStates);

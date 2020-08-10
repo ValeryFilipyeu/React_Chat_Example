@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { useSelector } from "react-redux";
-import { Breakpoint } from "features/layout/layoutModel";
-import { getPanelStates, getBreakpoint } from "features/layout/selectors";
-import { MyUserDetails } from "features/currentUser/MyUserDetails/MyUserDetails";
-import { MyConversations } from "features/joinedConversations/MyConversations/MyConversations";
+import { Breakpoint } from "components/layout/layoutModel";
+import { getPanelStates, getBreakpoint } from "components/layout/selectors";
+import { MyUserDetails } from "components/currentUser/MyUserDetails/MyUserDetails";
+import { MyConversations } from "components/joinedConversations/MyConversations/MyConversations";
 import { Wrapper, AnimatedWrapper } from "./Menu.style";
 
 const Menu = () => {
